@@ -1,0 +1,6 @@
+models/
+runtime/
+__pycache__/
+*.pyc
+*.gguf
+download_status.txt

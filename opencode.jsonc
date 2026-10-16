@@ -1,0 +1,41 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": "allow",
+  "model": "local/qwen3.8-27b",
+  "small_model": "local/qwen3.8-27b",
+  "default_agent": "build",
+  "agent": {
+    "build": {
+      "steps": 40,
+      "temperature": 0.2,
+    },
+  },
+  "provider": {
+    "local": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "RTX 4090",
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1",
+        "apiKey": "local",
+        "timeout": 600000,
+        "chunkTimeout": 180000,
+      },
+      "models": {
+        "qwen3.8-27b": {
+          "name": "Qwen3.8 27B Q4",
+          "limit": {
+            "context": 65536,
+            "output": 8192,
+          },
+        },
+        "muse-glimmer": {
+          "name": "Muse Glimmer 30B Q4",
+          "limit": {
+            "context": 65536,
+            "output": 8192,
+          },
+        },
+      },
+    },
+  },
+}

@@ -1,0 +1,15 @@
+{
+  "output_dir": "models",
+  "model_workers": 2,
+  "file_workers": 2,
+  "models": [
+    {
+      "repo_id": "ggml-org/Qwen3.8-27B-GGUF",
+      "allow": ["Qwen3.8-27B-Q4_K_M.gguf"]
+    },
+    {
+      "repo_id": "meta-models/Muse-Glimmer-30B-GGUF",
+      "allow": ["Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf"]
+    }
+  ]
+}
